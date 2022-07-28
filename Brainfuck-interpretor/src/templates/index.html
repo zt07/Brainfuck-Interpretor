@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+
+    <style>
+      .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      textarea {
+        width: 100%;
+      }
+    </style>
+
+    <title></title>
+
+
+</head>
+<body>
+    <br>
+  <h1 class="center">Brainfuck Interpreter</h1>
+    <br>
+    <!--add form to add code-->
+   <form method="POST" action="/interpret">
+    <h3 class="center"> Enter Code.</h3>
+    <textarea id="in" name = 'in'> </textarea>
+    <br>
+    <button type="submit" class="btn btn-primary" name="run" class="center">Run</button>
+        
+   </form>
+
+    <!-- output the result-->
+    <h3 class="center"> Output:</h3>
+    <div class="output">
+        <!-- make uneditable box to diplay output in-->
+        <!-- add output-->
+        <textarea name="output" class="form-control" readonly>{{result}}  </textarea>
+ 
+
+ 
+
+</body>
+</html>
