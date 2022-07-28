@@ -3,9 +3,7 @@ import brainfuck
 app = Flask(__name__)
 
 @app.route('/')
-def index():
-
-        return render_template('index.html')
+def index(): return render_template('index.html')
 
 
 @app.route('/interpret', methods=['POST'])
